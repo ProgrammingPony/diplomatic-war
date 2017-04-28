@@ -135,7 +135,7 @@ if (($_SERVER["REQUEST_METHOD"] == "POST")) {
 			umf_prepare_verification($user_id, $email); //Setup verification process for user
 			umf_update_last_login ($user_id);
 			
-			header("Location: https://diplomatic-war.com/verify.php");
+			header("Location: https://diplomatic-war.omarabdelbari.com/verify.php");
 			exit;
 		}
 	}
@@ -149,7 +149,7 @@ require('template1_part1.php');
 
 <H1>Register</H1>
 
-<form method="post" action="<?php echo htmlspecialchars('https://diplomatic-war.com/register.php');?>">
+<form method="post" action="<?php echo htmlspecialchars('http://diplomatic-war.omarabdelbari.com/register.php');?>">
 	<label for="register_firstName">First Name <span id="firstName_error" class="form-error">* <?php echo $firstName_error;?></span></label>
 	<input id="register_firstName" name="register_firstName" type="text" maxlength="70" placeholder="Maximum Length:70. Accepted Characters:a-z, A-Z." value="<?php echo $f_name;?>">
 	<br>

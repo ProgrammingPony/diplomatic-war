@@ -11,7 +11,7 @@ if ($user_id) {
 	
 	//If user still needs to be verified
 	if ( ($user_status == 1) && (strpos($_SERVER['REQUEST_URI'], 'verify.php') === false) && (strpos($_SERVER['REQUEST_URI'], 'bugs/') !== false)) {
-		header('Location: https://diplomatic-war.com/verify.php' );
+		header('Location: http://diplomatic-war.omarabdelbari.com/verify.php' );
 		exit();
 	}
 	

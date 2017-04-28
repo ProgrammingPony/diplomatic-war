@@ -9,7 +9,7 @@ require "$root/libraries/recaptchalib.php";
 
 <HEAD>
 <meta charset="UTF-8">
-<link rel="shortcut icon" href="https://diplomatic-war.com/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="http://diplomatic-war.com/favicon.ico" type="image/x-icon"/>
 <title>FAQ - DIPLOMATIC WAR</title>
 
 <STYLE>
@@ -75,7 +75,7 @@ INPUT[type=submit] {
 	cursor:pointer;
 	border-radius:7px;
 	/*background-color:#251000;*/
-	background-image: url("https://diplomatic-war.com/Graphics/textures/Bg_Texture___wood_by_nortago.jpg");
+	background-image: url("http://diplomatic-war.com/Graphics/textures/Bg_Texture___wood_by_nortago.jpg");
 	border-color:#ffa35f;
 	color:#ffa35f;
 }
@@ -118,7 +118,7 @@ LABEL {
 	padding:1%;
 	color:#330000;
 	border-radius:7px;
-	background-image: url("https://diplomatic-war.com/Graphics/textures/Wood_texture_by_shadowh3.jpg");
+	background-image: url("http://diplomatic-war.com/Graphics/textures/Wood_texture_by_shadowh3.jpg");
 }
 
 #body-box {

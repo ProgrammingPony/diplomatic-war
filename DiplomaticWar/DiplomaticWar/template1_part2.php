@@ -8,7 +8,7 @@ echo '
 		<div id="left-container" class="container">
 			<!--LOGO HOLDER-->
 			<div id="logo-container" class="left-container-parent">
-				<a href="https://diplomatic-war.com/index.php"><img id="logo" alt="Logo" class="width-wide-image" src="Graphics/logo.jpg"></a>
+				<a href="http://diplomatic-war.omarabdelbari.com/index.php"><img id="logo" alt="Logo" class="width-wide-image" src="Graphics/logo.jpg"></a>
 			</div>';
 
 if ($user_id) {
@@ -37,27 +37,27 @@ if ($user_id) {
 					<br>
 					<span class='login-label'>Time</span><span class='login-value'>$last_login_time</span>
 					<br>
-					<a href='https://diplomatic-war.com/logout.php'>Logout</a>
+					<a href='http://diplomatic-war.omarabdelbari.com/logout.php'>Logout</a>
 				</div>
 			</div>";
 } else {
 	echo '	<!--LOGIN HOLDER-->
 			<div id="login-icon-container" class="left-container-parent">
-				<a href="https://diplomatic-war.com/login.php"><img id="login-image" alt="Login Icon" class="width-wide-image" src="Graphics/LoginIcon.png"></a>
+				<a href="http://diplomatic-war.omarabdelbari.com/login.php"><img id="login-image" alt="Login Icon" class="width-wide-image" src="Graphics/LoginIcon.png"></a>
 			</div>
 			
 			<!--REGISTER HOLDER-->
 			<div class="left-container-parent">
-				<a href="https://diplomatic-war.com/register.php"><img id="register-image" alt="Register Button" class="width-wide-image" src="Graphics/RegisterIcon.jpg"></a>
+				<a href="http://diplomatic-war.omarabdelbari.com/register.php"><img id="register-image" alt="Register Button" class="width-wide-image" src="Graphics/RegisterIcon.jpg"></a>
 			</div>';
 }
 
 echo	'
 			<!--LINK LIST-->
 			<div id="left-container-linklist" class="left-container-parent">
-				<a href="https://diplomatic-war.com/tour.php">The Tour</a>
-				<a href="https://game-info.diplomatic-war.com">Game Manual</a>
-				<a href="https://diplomatic-war.com/download.php">Download</a>
+				<a href="http://diplomatic-war.omarabdelbari.com/tour.php">The Tour</a>
+				<a href="http://game-info.diplomatic-war.omarabdelbari.com">Game Manual</a>
+				<a href="http://diplomatic-war.omarabdelbari.com/download.php">Download</a>
 			</div>
 		</div>
 		

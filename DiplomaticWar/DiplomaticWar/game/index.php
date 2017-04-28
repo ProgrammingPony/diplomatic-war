@@ -7,7 +7,7 @@ require('scripts/header_operations.php');
 <HTML>
 
 <HEAD>
-<link rel="shortcut icon" href="https://diplomatic-war.com/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="https://diplomatic-war.omarabdelbari.com/favicon.ico" type="image/x-icon"/>
 <meta charset="utf-8"/>
 <meta name="robots" content="INDEX, FOLLOW">
 <meta name="author" content="Omar Abdel Bari">

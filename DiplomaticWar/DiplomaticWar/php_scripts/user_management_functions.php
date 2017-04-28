@@ -312,12 +312,12 @@ function umf_prepare_verification($user_id, $email) {
 	$con->close();
 	
 	//Send mail to user
-	$message = 'Hello, this is the verification email to complete your registration. Please click on the following link or paste it into your browser to complete your registration, the verification link expires in two hours. https://diplomatic-war.com/verify.php?ver_code=' . $ver_code . '
-Also you may manually enter your verification code at https://diplomatic-war.com/verify.php, Your code is: ' . $ver_code . '.
+	$message = 'Hello, this is the verification email to complete your registration. Please click on the following link or paste it into your browser to complete your registration, the verification link expires in two hours. http://diplomatic-war.omarabdelbari.com/verify.php?ver_code=' . $ver_code . '
+Also you may manually enter your verification code at http://diplomatic-war.omarabdelbari.com/verify.php, Your code is: ' . $ver_code . '.
 
 NOTE: YOU MUST BE LOGGED IN IN ORDER FOR THE VERIFICATION LINK TO WORK.
 
-Has your verification link expired? No worries! Just try to login on at https://diplomatic-war.com and we will send you another link.
+Has your verification link expired? No worries! Just try to login on at http://diplomatic-war.omarabdelbari.com and we will send you another link.
 
 If you did not register at Diplomatic War, don\'t worry, you can ignore this email.';
 

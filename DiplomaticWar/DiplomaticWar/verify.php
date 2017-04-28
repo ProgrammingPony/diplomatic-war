@@ -5,7 +5,7 @@ require ('template1_header_operations.php');
 //Redirect to main page if they are already verified
 if ( !empty($user_status) && ($user_status == 2) ) {
 	error_log("leaving verify to index");
-	header("Location: https://diplomatic-war.com/index.php");
+	header("Location: https://diplomatic-war.omarabdelbari.com/index.php");
 	exit;
 }
 
@@ -16,7 +16,7 @@ if ( isset($user_id) && isset($_GET['ver_code']) ) {
 
 //When the verification was successful, redirect to succes page
 if (isset($ver_err) && (!$ver_err)) {
-	header('Location: http://diplomatic-war.com/register-success.php');
+	header('Location: http://diplomatic-war.omarabdelbari.com/register-success.php');
 	exit;
 }
 
@@ -63,7 +63,7 @@ if ($user_id) {
 			' hours it is subject to removal, after which the email may be used for registering again. You may need to check your spam folder!</p>';
 	}
 
-	echo '<form method="get" action="' . htmlspecialchars('https://diplomatic-war.com/verify.php') . '">
+	echo '<form method="get" action="' . htmlspecialchars('http://diplomatic-war.com/verify.php') . '">
 			<label for="ver_code">Verification Code: </label>
 			<input id="ver_code" name="ver_code" type="text" maxlength="50" placeholder="Please Enter the Verification Code Here">
 			<br>

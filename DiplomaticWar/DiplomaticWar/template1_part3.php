@@ -6,10 +6,10 @@ echo '
 		
 		<!--BOTTOM CONTAINER-->
 		<div id="bottom-container" class="container">
-			<a style="clear:left;" href="https://forum.diplomatic-war.com">Forum</a>
-			<a href="https://support.diplomatic-war.com">Support</a>
-			<a href="https://bugs.diplomatic-war.com">Report a Bug</a>
-			<a style="clear:right;" href="https://diplomatic-war.com/contact-us.php">Contact Us</a>
+			<a style="clear:left;" href="http://forum.diplomatic-war.omarabdelbari.com">Forum</a>
+			<a href="http://support.diplomatic-war.omarabdelbari.com">Support</a>
+			<a href="http://bugs.diplomatic-war.omarabdelbari.com">Report a Bug</a>
+			<a style="clear:right;" href="http://diplomatic-war.omarabdelbari.com/contact-us.php">Contact Us</a>
 			
 			<br>
 			

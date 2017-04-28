@@ -5,11 +5,11 @@ require ('template1_header_operations.php');
 if (!empty($user_status)) {
 	switch($user_status) {
 	case 1: case 4: case 3://This may change later for banned and suspended users
-		header("Location: https://diplomatic-war.com/index.php");
+		header("Location: http://diplomatic-war.omarabdelbari.com/index.php");
 		exit;
 		break;
 	case 2:
-		header("Location: https://diplomatic-war.com/verify.php");
+		header("Location: http://diplomatic-war.omarabdelbari.com/verify.php");
 		exit;
 	default:
 		error_log('login.php : invalid user_status when determining header');
@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 					sesf_end_session(session_id());						
 					sesf_create_session ($l_user_id);
 
-					header("Location: https://diplomatic-war.com/index.php");
+					header("Location: http://diplomatic-war.com/index.php");
 					exit;
 				//When the credentials provided were not
 				} else {
@@ -102,7 +102,7 @@ require('template1_part1.php');
 
 <?php 
 if ($_SESSION["login_attempts"] < 10) {
-	echo '<form method="post" action="' . htmlspecialchars('https://diplomatic-war.com/login.php') . '">
+	echo '<form method="post" action="' . htmlspecialchars('http://diplomatic-war.com/login.php') . '">
 	<p class="form-error">' . $submit_message . '</p>
 	<br>';
 	
@@ -140,6 +140,6 @@ if ($_SESSION["login_attempts"] < 10) {
 }
 ?>
 
-<p>Forgot your credentials? Click <a href="https://support.diplomatic-war.com/retrieve-password.php">here</a>.</p>
+<p>Forgot your credentials? Click <a href="http://support.diplomatic-war.com/retrieve-password.php">here</a>.</p>
 
 <?php require('template1_part3.php');?>

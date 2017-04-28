@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		//When no validation errors
 		if ($is_valid) {
 			//Reference: http://www.inmotionhosting.com/support/email/send-email-from-a-page/using-phpmailer-to-send-mail-through-php
-			require("https://diplomatic-war.com/libraries/PHPMailer_5.2.0/class.phpmailer.php");
+			require("http://diplomatic-war.omarabdelbari.com/libraries/PHPMailer_5.2.0/class.phpmailer.php");
 
 			$mail = new PHPMailer();
 
@@ -120,12 +120,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <HEAD>
 <meta charset="UTF-8">
-<link rel="shortcut icon" href="https://diplomatic-war.com/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="http://diplomatic-war.omarabdelbari.com/favicon.ico" type="image/x-icon"/>
 <title>BUGS - DIPLOMATIC WAR</title>
 
 <STYLE>
 BODY {
-	background-image: url("https://diplomatic-war.com/Graphics/textures/Wood_texture_by_shadowh3.jpg");
+	background-image: url("http://diplomatic-war.omarabdelbari.com/Graphics/textures/Wood_texture_by_shadowh3.jpg");
 }
 
 SELECT {
@@ -182,7 +182,7 @@ INPUT[type=submit] {
 	cursor:pointer;
 	border-radius:7px;
 	/*background-color:#251000;*/
-	background-image: url("https://diplomatic-war.com/Graphics/textures/Bg_Texture___wood_by_nortago.jpg");
+	background-image: url("http://diplomatic-war.omarabdelbari.com/Graphics/textures/Bg_Texture___wood_by_nortago.jpg");
 	border-color:#ffa35f;
 	color:#ffa35f;
 }
@@ -239,7 +239,7 @@ LABEL {
 	<p>For now we will accept emails from non-members in case there is a problem with registration, 
 	we will make it only available to members in the future.</p>
 
-	<form method="post" action="<?php echo htmlspecialchars('https://diplomatic-war.com/bugs/index.php')?>" enctype="multipart/form-data">
+	<form method="post" action="<?php echo htmlspecialchars('http://diplomatic-war.omarabdelbari.com/bugs/index.php')?>" enctype="multipart/form-data">
 		<p class="form-error">* marks required fields</p>
 		<span id="submit-message" class="form-error"><?php echo $submit_msg; ?></span>
 		<br>

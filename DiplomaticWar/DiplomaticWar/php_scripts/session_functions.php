@@ -13,7 +13,13 @@ function sesf_assert() {
 	$session_id = session_id();	
 	
 	$con = dbf_user_connect();
-	$stmt = $con->prepare('SELECT salt,session_hash FROM sessions WHERE session_id=?');
+
+	$stmt = $con->prepare("SELECT salt,session_hash FROM sessions WHERE session_id=?");
+
+	if (! $stmt ) {
+		echo "Prepare failed: (" . $con->errno . ") " . $con->error;
+	}
+
 	$stmt->bind_param('s', $session_id);
 	$stmt->execute();
 	$stmt->bind_result($salt, $ses_hash);
@@ -163,7 +169,7 @@ Redirects user if they are already logged in
 */
 function sesf_redirect_if_logged_in($user_id) {
 	if ($user_id) {
-		header("Location: https://diplomatic-war.com/index.php");
+		header("Location: https://diplomatic-war.omarabdelbari.com/index.php");
 		exit;
 	}
 }

@@ -173,7 +173,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 <HEAD>
 <meta charset="UTF-8">
-<link rel="shortcut icon" href="https://diplomatic-war.com/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="http://diplomatic-war.omarabdelbari.com/favicon.ico" type="image/x-icon"/>
 <title>SUPPORT - DIPLOMATIC WAR</title>
 
 <STYLE>
@@ -236,7 +236,7 @@ INPUT[type=submit] {
 	cursor:pointer;
 	border-radius:7px;
 	/*background-color:#251000;*/
-	background-image: url("https://diplomatic-war.com/Graphics/textures/Bg_Texture___wood_by_nortago.jpg");
+	background-image: url("http://diplomatic-war.omarabdelbari.com/Graphics/textures/Bg_Texture___wood_by_nortago.jpg");
 	border-color:#ffa35f;
 	color:#ffa35f;
 }
@@ -279,7 +279,7 @@ LABEL {
 	padding:1%;
 	color:#330000;
 	border-radius:7px;
-	background-image: url("https://diplomatic-war.com/Graphics/textures/Wood_texture_by_shadowh3.jpg");
+	background-image: url("http://diplomatic-war.omarabdelbari.com/Graphics/textures/Wood_texture_by_shadowh3.jpg");
 }
 
 #body-box {
@@ -331,7 +331,7 @@ LABEL {
 	<span id="submit-message" class="form-error"><?php echo $submit_msg; ?></span>
 <?php
 if ($_SESSION['retrieve_password_stage'] === 1) {
-	echo '<form method="post" action="' . htmlspecialchars('https://diplomatic-war.com/support/retrieve-password.php') . '">
+	echo '<form method="post" action="' . htmlspecialchars('http://diplomatic-war.omarabdelbari.com/support/retrieve-password.php') . '">
 		<p>Please enter the email address associated with the account with which you wish to retrieve a password.
 		An email will be sent to this email address with instructions to reset your password.</p>
 		
@@ -344,7 +344,7 @@ if ($_SESSION['retrieve_password_stage'] === 1) {
 } else if ($_SESSION['retrieve_password_stage'] === 2) {
 	echo '<p>If the email you entered was registered, an email was sent to that email with instructions to reset your password
 	It may take a few minutes for the email to arrive.</p>
-	<form method="get" action="' . htmlspecialchars('https://diplomatic-war.com/support/retrieve-password.php') . '">
+	<form method="get" action="' . htmlspecialchars('http://diplomatic-war.omarabdelbari.com/support/retrieve-password.php') . '">
 		<label for="r_code">Code <span id="code_error" class="form-error">' . $code_error . '</span></label>
 		<input id="r_code" name="r_code" maxlength="' . cPASSWORD_RETRIEVAL_CODE_LENGTH . '" type="text" placeholder="Enter the code provided in the email we sent you">
 		<br>
@@ -353,7 +353,7 @@ if ($_SESSION['retrieve_password_stage'] === 1) {
 	</form>';
 } else if ($_SESSION['retrieve_password_stage'] === 3) {
 	echo '<p>The code you entered is valid. Please enter your new password.</p>
-	<form method="post" action="' . htmlspecialchars('https://diplomatic-war.com/support/retrieve-password.php') . '">
+	<form method="post" action="' . htmlspecialchars('http://diplomatic-war.omarabdelbari.com/support/retrieve-password.php') . '">
 		<label for="r_password">Password <span id="password_error" class="form-error">' . $password_error . '</span></label>
 		<input id="r_password" name="r_password" type="password" maxlength="' . cMAXIMUM_PASSWORD_LENGTH . '" placeholder="Maximum Length:26. Accepted Characters:0-9, a-z, A-Z.">
 		<br>

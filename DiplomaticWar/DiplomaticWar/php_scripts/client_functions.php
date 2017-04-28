@@ -4,7 +4,7 @@
 function clif_get_client_ip() {
     $ipaddress = '';
 
-    else if($_SERVER['REMOTE_ADDR'])*/
+    if($_SERVER['REMOTE_ADDR'])
         $ipaddress = $_SERVER['REMOTE_ADDR'];
     else
         $ipaddress = 'UNKNOWN';
